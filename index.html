@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CloudPoint - Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/favicon.png" type="image/png">
+</head>
+<body class="day">
+  <!-- Header Section -->
+  <header>
+    <h1>CloudPoint</h1>
+    <label for="toggle-daynight" class="toggle-label" aria-label="Toggle Day Night Mode">Day / Night</label>
+    <input type="checkbox" id="toggle-daynight" />
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="city-selector">
+      <input type="radio" name="city" id="city1" checked />
+      <input type="radio" name="city" id="city2" />
+      <input type="radio" name="city" id="city3" />
+
+      <div class="weather-app">
+        <div class="tabs">
+          <label for="city1">Kalna</label>
+          <label for="city2">Kolkata</label>
+          <label for="city3">Delhi</label>
+        </div>
+
+        <div class="weather-content">
+          <!-- City 1 (Kalna) -->
+          <div class="weather-info sunny" id="info1">
+            <div class="location">Kalna</div>
+            <div class="temp">68<span>°C</span></div>
+            <div class="weather-icon sun">☀️</div>
+            <div class="description">Clear sky</div>
+            <div class="details">
+              <div><span>Humidity</span>55%</div>
+              <div><span>Wind</span>7 mph</div>
+              <div><span>Pressure</span>1012 hPa</div>
+            </div>
+          </div>
+
+          <!-- City 2 (Kolkata) -->
+          <div class="weather-info cloudy" id="info2">
+            <div class="location">Kolkata</div>
+            <div class="temp">35<span>°C</span></div>
+            <div class="weather-icon cloud">☁️</div>
+            <div class="description">Cloudy</div>
+            <div class="details">
+              <div><span>Humidity</span>65%</div>
+              <div><span>Wind</span>10 mph</div>
+              <div><span>Pressure</span>1018 hPa</div>
+            </div>
+          </div>
+
+          <!-- City 3 (Delhi) -->
+          <div class="weather-info rainy" id="info3">
+            <div class="location">Delhi</div>
+            <div class="temp">33<span>°C</span></div>
+            <div class="weather-icon rain">🌧️</div>
+            <div class="description">Light rain</div>
+            <div class="details">
+              <div><span>Humidity</span>78%</div>
+              <div><span>Wind</span>12 mph</div>
+              <div><span>Pressure</span>1008 hPa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 CloudPoint. All rights reserved.</p>
+  </footer>
+</body>
+</html>
